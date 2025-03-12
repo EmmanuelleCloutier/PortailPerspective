@@ -23,6 +23,11 @@ APortails::APortails()
 	PortalCollision->OnComponentBeginOverlap.AddDynamic(this, &APortails::OnOverlapBegin);
 }
 
+void APortails::BeginPlay()
+{
+	Super::BeginPlay();
+}
+
 void APortails::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);

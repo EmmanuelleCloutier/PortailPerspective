@@ -3,6 +3,9 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Components/BoxComponent.h"
+#include "Components/StaticMeshComponent.h"
+#include "Components/SceneCaptureComponent2D.h"
 #include "Portails.generated.h"
 
 UCLASS()

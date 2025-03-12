@@ -6,20 +6,25 @@
 APortails::APortails()
 {
 	PrimaryActorTick.bCanEverTick = true;
-	
+
+	//points de base door pour organiser la pair de portail 
 	SceneRoot = CreateDefaultSubobject<USceneComponent>(TEXT("SceneRoot"));
 	RootComponent = SceneRoot;
-	
+
+	//pour pouvoir detecter les collisions 
 	PortalCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("PortalCollision"));
 	PortalCollision->SetupAttachment(SceneRoot);
 	PortalCollision->SetBoxExtent(FVector(50.0f, 50.0f, 100.0f));
-	
+
+	//creation du mesh pour avoir de quoi visuel 
 	PortalMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PortalMesh"));
 	PortalMesh->SetupAttachment(SceneRoot);
-	
+
+	//camera pour capturer la vue de lautre portail 
 	CaptureComponent = CreateDefaultSubobject<USceneCaptureComponent2D>(TEXT("CaptureComponent"));
 	CaptureComponent->SetupAttachment(SceneRoot);
-	
+
+	//overllaping 
 	PortalCollision->OnComponentBeginOverlap.AddDynamic(this, &APortails::OnOverlapBegin);
 }
 
@@ -46,11 +51,13 @@ void APortails::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor*
 
 void APortails::TeleportActor(AActor* Actor)
 {
-	if (!LinkedPortal) return;
+	if (!LinkedPortal) return; //pour savoir le portail est link avec son autre pair
 
+	//recupere position et rotation de son pair
 	FVector NewLocation = LinkedPortal->GetActorLocation();
 	FRotator NewRotation = LinkedPortal->GetActorRotation();
 
+	//deplace acteur a son endroit 
 	Actor->SetActorLocation(NewLocation);
 	Actor->SetActorRotation(NewRotation);
 }

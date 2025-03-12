@@ -9,6 +9,7 @@ ASpecalBloc::ASpecalBloc()
 	JumpVelocity = 0.0f;
 }
 
+//fonction qui recupere la vitesse actuelle du bloc 
 float ASpecalBloc::GetCurrentVelocity() const
 {
 	
@@ -20,38 +21,31 @@ float ASpecalBloc::GetCurrentVelocity() const
 void ASpecalBloc::JumpPortal(FVector TargetLocation, FRotator TargetRotation)
 {
 	
-	UE_LOG(LogTemp, Warning, TEXT("Traversing Portal"));
-
-	
 	float CurrentVelocity = GetCurrentVelocity();
 	if (CurrentVelocity <= 0.0f)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Current velocity is too low to jump."));
-		return; 
+		return; //fait traverse pas parce qui est pas propulse 
 	}
-	
+
+	//enrigistre la vitesse du portail pour la sortie
 	JumpVelocity = CurrentVelocity;
-	
+	//deplace a la nouvelle position et rotation
 	SetActorLocationAndRotation(TargetLocation, TargetRotation, false, nullptr, ETeleportType::TeleportPhysics);
-	
+
+	//recupere et 
 	FVector ForwardVector = GetActorForwardVector();
 	FVector NewVelocity = ForwardVector * JumpVelocity;
 
+	//applique la nouvelle vitesse au composante avec verif issimulationphysics 
 	UPrimitiveComponent* RootComp = Cast<UPrimitiveComponent>(GetRootComponent());
 	if (RootComp)
 	{
+		//verifie si le composant simule la physique 
 		if (RootComp->IsSimulatingPhysics())
 		{
+			//applicque la nouvelle vitesse 
 			RootComp->SetPhysicsLinearVelocity(NewVelocity);
 		}
-		else
-		{
-			UE_LOG(LogTemp, Warning, TEXT("Root component is not simulating physics."));
-		}
-	}
-	else
-	{
-		UE_LOG(LogTemp, Warning, TEXT("No root component found."));
 	}
 }
 

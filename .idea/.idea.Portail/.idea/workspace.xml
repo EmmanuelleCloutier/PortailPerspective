@@ -12,13 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3be82f3b-8460-48cf-95f1-75d319520d6f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/Portail/Private/SpecalBloc.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Portail/Public/SpecalBloc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Portail/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Portail/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Portail/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Portail/Private/Portails.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Portail/Private/Portails.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Portail/Private/SpecalBloc.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Portail/Private/SpecalBloc.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Portail/Public/Portails.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Portail/Public/Portails.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Portail/Public/SpecalBloc.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Portail/Public/SpecalBloc.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,21 +38,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "C/C++ Project.Portail.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.appearance",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;C/C++ Project.Portail.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="C/C++ Project.Portail">
     <configuration name="Portail" type="CppProject" factoryName="C++ Project">
       <configuration_1 setup="1">
@@ -149,6 +147,7 @@
       <updated>1741796675143</updated>
       <workItem from="1741796676915" duration="175000" />
       <workItem from="1741796989189" duration="714000" />
+      <workItem from="1741797762250" duration="1076000" />
     </task>
     <servers />
   </component>

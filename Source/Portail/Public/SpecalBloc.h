@@ -12,13 +12,16 @@ class PORTAIL_API ASpecalBloc : public AActor
 public:
 	ASpecalBloc();
 
+	//fonciton qui permet que le bloc se teleporte entre les portail 
 	UFUNCTION(BlueprintCallable, Category = "Portal")
 	void JumpPortal(FVector TargetLocation, FRotator TargetRotation);
 
-protected: 
+protected:
+	//vitesse de teleportation 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Portal")
 	float JumpVelocity;
 
+	//retourne vitesse du bloc (si lancer ou pas) 
 	float GetCurrentVelocity() const; 
 
 };

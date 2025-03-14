@@ -11,7 +11,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3be82f3b-8460-48cf-95f1-75d319520d6f" name="Changes" comment="" />
+    <list default="true" id="3be82f3b-8460-48cf-95f1-75d319520d6f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Content/FirstPerson/Blueprints/BP_Weapon_Component.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FirstPerson/Blueprints/BP_Weapon_Component.uasset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -142,6 +144,7 @@
       <workItem from="1741796676915" duration="175000" />
       <workItem from="1741796989189" duration="714000" />
       <workItem from="1741797762250" duration="1420000" />
+      <workItem from="1741955780200" duration="721000" />
     </task>
     <servers />
   </component>
